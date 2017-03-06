@@ -1,0 +1,87 @@
+.music-player .playerWrap{
+    border: 5px solid #008bbc;
+    background-image: linear-gradient(#FFF, #35bde4);
+}
+.music-player .playerWrap.showList::after{
+    border-left: 20px solid #008bbc;
+}
+.music-player .music-info{
+    border-bottom: 1px solid #008bbc;
+}
+.music-player .music-info .singer-head{
+    border: 1px solid #008bbc;
+}
+.music-player .singer-name{
+    color: #008bbc;
+}
+.music-player .option .list.active span{
+    background-color: #008bbc;
+}
+.music-player .option .random.active span{
+    background-color: #008bbc;
+}
+.music-player .option .loop.active{
+    border-color: #008bbc;
+}
+.music-player .option .volume_bar .volume_now{
+    background-color: #008bbc;
+}
+.music-player .progress{
+    background-color: #008bbc;
+}
+.music-player .btn div, .mv_container .btn div{
+    border: 3px solid #008bbc;
+}
+.music-player .btn div.play::after,
+.mv_container .btn div.play::after{
+    border-left: 20px solid #008bbc;
+}
+.music-player .btn div.pause::before,
+.mv_container .btn div.pause::before{
+    background-color: #008bbc;
+}
+.music-player .btn div.pause::after,
+.mv_container .btn div.pause::after{
+    background-color: #008bbc;
+}
+.music-player .btn div.prev::before,
+.mv_container .btn div.prev::before{
+    border-right: 10px solid #008bbc;
+}
+.music-player .btn div.prev::after,
+.mv_container .btn div.prev::after{
+    border-right: 10px solid #008bbc;
+}
+.music-player .btn div.next::before,
+.mv_container .btn div.next::before{
+    border-left: 10px solid #008bbc;
+}
+.music-player .btn div.next::after,
+.mv_container .btn div.next::after{
+    border-left: 10px solid #008bbc;
+}
+.music-player ul{
+    background-image: linear-gradient(#FFF, #35bde4);
+    border: 5px solid #008bbc;
+}
+.music-player ul li{
+    border-bottom: 1px solid #008bbc;
+}
+.music-player li span.name{
+    color: #008bbc;
+}
+.music-player li span.name i.right{
+    border-color: #008bbc;
+}
+.mv_container .mv_wrap .title{
+    background-color: #35bde4;
+}
+.mv_container .mv_wrap .option_panel{
+    background-color: #35bde4;
+}
+.mv_container div.progress_bar div.progress{
+    background-color: #008bbc;
+}
+.music-player ul li.current{
+    background-color: rgba(0,139,188,0.3);
+}

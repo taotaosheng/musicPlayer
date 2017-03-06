@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/musicPlayerCss.css">
+</head>
+<body>
+<!--音乐播放器 start-->
+<div class="container">
+    <div class="music-player">
+        <div class="playerWrap">
+            <div class="theme">
+                <div class="Theme-pink"></div>
+                <div class="Theme-green"></div>
+                <div class="Theme-blue"></div>
+            </div>
+            <div class="music-info" title="歌单">
+                <div class="singer-head">
+                    <img src="">
+                </div>
+                <div class="music-intro">
+                    <p class="singer-name"></p>
+                    <marquee class="music-name"></marquee>
+                    <p class="music-album"></p>
+                </div>
+            </div>
+            <div class="music-contro">
+                <div class="option">
+                    <div class="time">00:00</div>
+                    <div class="option-btn">
+                        <div class="list active" title="列表循环">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="random" title="随机播放">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="loop" title="单曲循环"></div>
+                        <div class="voice" title="播放音量"></div>
+                        <div class="volume_bar" style="display: none;">
+                            <div class="volume_now"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress_bar">
+                    <div class="buffer"></div>
+                    <div class="progress"></div>
+                </div>
+                <div class="btn">
+                    <div class="prev" title="上一曲"></div>
+                    <div class="play" title="播放"></div>
+                    <div class="pause" style="display: none;" title="暂停"></div>
+                    <div class="next" title="下一曲"></div>
+                </div>
+                <audio id="audio">
+                    <p>您的浏览器不支持HTML5播放器呢！赶紧换一个最新的呗^_^.</p>
+                </audio>
+            </div>
+        </div>
+        <ul class="playList">
+
+        </ul>
+    </div>
+</div>
+<!--音乐播放器 end-->
+
+<!--帮助层 start-->
+<div class="help_window" style="display: none;" onclick="this.style.display = 'none'">
+    <div class="content"></div>
+</div>
+<!--帮助曾 end-->
+
+<!--MV播放器 start-->
+<div class="mv_container" style='display: none;'>
+    <div class="mv_wrap">
+        <div class="title"></div>
+        <div class="screen">
+            <div class="loading" style="display: none;">Loading<span>...</span></div>
+            <video id="video">
+                <p>您的浏览器不支持HTML5播放器呢！赶紧换一个最新的呗^_^.</p>
+            </video>
+            <div class="progress_wrap">
+                <div class="cur_time">00:00</div>
+                <div class="progress_bar">
+                    <div class="buffer"></div>
+                    <div class="progress"></div>
+                </div>
+                <div class="all_time">-00:00</div>
+            </div>
+        </div>
+        <div class="option_panel">
+            <div class="btn">
+                <div class="prev" title="快进"></div>
+                <div class="play" title="播放"></div>
+                <div class="pause" style="display: none;" title="暂停"></div>
+                <div class="next" title="快退"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MV播放器 end-->
+<script src="data.js"></script>
+<script src="js/musicPlay.js"></script>
+<script src="js/MVPlayer.js"></script>
+<script>
+    var playList = data.playList;
+    var player = new musicPlayer(playList);
+    player.init();
+</script>
+</body>
+</html>

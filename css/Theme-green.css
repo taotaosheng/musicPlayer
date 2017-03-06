@@ -1,0 +1,87 @@
+.music-player .playerWrap{
+    border: 5px solid limegreen;
+    background-image: linear-gradient(#FFF, mediumspringgreen);
+}
+.music-player .playerWrap.showList::after{
+    border-left: 20px solid limegreen;
+}
+.music-player .music-info{
+    border-bottom: 1px solid limegreen;
+}
+.music-player .music-info .singer-head{
+    border: 1px solid limegreen;
+}
+.music-player .singer-name{
+    color: limegreen;
+}
+.music-player .option .list.active span{
+    background-color: limegreen;
+}
+.music-player .option .random.active span{
+    background-color: limegreen;
+}
+.music-player .option .loop.active{
+    border-color: limegreen;
+}
+.music-player .option .volume_bar .volume_now{
+    background-color: limegreen;
+}
+.music-player .progress{
+    background-color: limegreen;
+}
+.music-player .btn div, .mv_container .btn div{
+    border: 3px solid limegreen;
+}
+.music-player .btn div.play::after,
+.mv_container .btn div.play::after{
+    border-left: 20px solid limegreen;
+}
+.music-player .btn div.pause::before,
+.mv_container .btn div.pause::before{
+    background-color: limegreen;
+}
+.music-player .btn div.pause::after,
+.mv_container .btn div.pause::after{
+    background-color: limegreen;
+}
+.music-player .btn div.prev::before,
+.mv_container .btn div.prev::before{
+    border-right: 10px solid limegreen;
+}
+.music-player .btn div.prev::after,
+.mv_container .btn div.prev::after{
+    border-right: 10px solid limegreen;
+}
+.music-player .btn div.next::before,
+.mv_container .btn div.next::before{
+    border-left: 10px solid limegreen;
+}
+.music-player .btn div.next::after,
+.mv_container .btn div.next::after{
+    border-left: 10px solid limegreen;
+}
+.music-player ul{
+    background-image: linear-gradient(#FFF, mediumspringgreen);
+    border: 5px solid limegreen;
+}
+.music-player ul li{
+    border-bottom: 1px solid limegreen;
+}
+.music-player li span.name{
+    color: limegreen;
+}
+.music-player li span.name i.right{
+    border-color: limegreen;
+}
+.mv_container .mv_wrap .title{
+    background-color: mediumspringgreen;
+}
+.mv_container .mv_wrap .option_panel{
+    background-color: mediumspringgreen;
+}
+.mv_container div.progress_bar div.progress{
+    background-color: limegreen;
+}
+.music-player ul li.current{
+    background-color: rgba(50,205,50,0.3);
+}
